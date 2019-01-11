@@ -54,10 +54,11 @@ They are all defined in `~/.emacs.d/core/core-dotspacemacs.el'.
 Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
   (setq-default
    ;; Display
-   dotspacemacs-default-font `(,(if (x-list-fonts "Operator Mono")
-                                    "operator mono medium"
-                                  "Source Code Pro")
-                               :size ,(if (= 1440 (display-pixel-height)) 20 18))
+   dotspacemacs-default-font '("Source Code Pro"
+                               :size 13
+                               :weight normal
+                               :width normal
+                               :powerline-scale 1.1)
    dotspacemacs-themes       '(spacemacs-dark
                                zenburn
                                solarized-light
