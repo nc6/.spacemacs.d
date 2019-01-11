@@ -26,8 +26,8 @@
 
 ;;;; Configuration
 
-(defvar server? (if eric? t nil)
-  "Alias `dotspacemacs-enable-server'. Defaults to nil for non-eric users.")
+(defvar server? t
+  "Alias `dotspacemacs-enable-server'.")
 
 (defvar redo-bindings? (if eric? t nil)
   "Redo spacemacs bindings? Defaults to nil for non-eric users.
@@ -104,7 +104,7 @@ Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
      anzu centered-cursor-mode column-enforce-mode company-statistics
      doom-modeline eshell-prompt-extras evil-anzu evil-mc evil-tutor
      fancy-battery fill-column-indicator gnuplot golden-ratio indent-guide
-     live-py-mode multi-term multiple-cursors mwim neotree paradox py-isort
+     live-py-mode multi-term multiple-cursors mwim paradox py-isort
      yapfify)))
 
 ;;;; Spacemacs/user-init
