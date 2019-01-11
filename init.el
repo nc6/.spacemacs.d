@@ -58,8 +58,10 @@ Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
                                     "operator mono medium"
                                   "Source Code Pro")
                                :size ,(if (= 1440 (display-pixel-height)) 20 18))
-   dotspacemacs-themes       '(solarized-light
-                               zenburn)
+   dotspacemacs-themes       '(spacemacs-dark
+                               zenburn
+                               solarized-light
+                               )
 
    ;; General
    dotspacemacs-auto-generate-layout-names t
