@@ -48,7 +48,7 @@
 ;;;; Evil
 
 (defun config/post-init-evil ()
-  (setq evil-escape-key-sequence "jk")
+  (setq evil-escape-key-sequence "fd")
   (setq evil-escape-unordered-key-sequence "true")
 
   (evil-global-set-key 'normal "Q" 'evil-execute-q-macro)
