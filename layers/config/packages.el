@@ -3,6 +3,7 @@
 (setq config-packages
       '(;; Unowned Packages
         aggressive-indent
+        auctex
         avy
         eshell
         evil
@@ -157,6 +158,16 @@
                ("M-4" . winum-select-window-4)
                ("M-5" . winum-select-window-5))))
 
+
+
+
+;;;; AucTeX
+
+(defun config/post-init-auctex ()
+  (setq TeX-view-program-list
+        '(("okular" "okular --unique %o#src:%n`pwd`/./%b")))
+  (setq TeX-view-program-selection '((output-pdf "okular")))
+  )
 ;;; Owned Packages
 ;;;; Auto Dim Other Buffers
 

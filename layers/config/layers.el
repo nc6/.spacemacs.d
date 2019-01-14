@@ -28,6 +28,7 @@
    ;; Markups
    csv
    html
+   latex
    markdown
    yaml
 
