@@ -97,7 +97,9 @@ Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
    dotspacemacs-configuration-layers     '((config   :location local)
                                            (display  :location local)
                                            )
-   dotspacemacs-configuration-layer-path '("~/.spacemacs.d/layers/")
+   dotspacemacs-configuration-layer-path '("~/.spacemacs.d/layers/"
+                                           "~/.emacs.d.private"
+                                           )
    dotspacemacs-additional-packages      '()
    dotspacemacs-frozen-packages          '()
    dotspacemacs-excluded-packages
