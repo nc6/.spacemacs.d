@@ -72,7 +72,7 @@ Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
    dotspacemacs-elpa-https                 nil
    dotspacemacs-elpa-subdirectory          nil
    dotspacemacs-enable-server              server?
-   dotspacemacs-fullscreen-at-startup      t
+   dotspacemacs-fullscreen-at-startup      f
    dotspacemacs-large-file-size            5
    dotspacemacs-persistent-server          server?
    dotspacemacs-pretty-docs                t
