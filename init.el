@@ -19,7 +19,6 @@
 
 ;;;; Constants
 
-(defconst eric?    (string= "Eric Kaschalk" (user-full-name)) "Am I me?")
 (defconst linux?   (eq system-type 'gnu/linux) "Are we on a linux machine?")
 (defconst mac?     (eq system-type 'darwin)    "Are we on a macOS machine?")
 (defconst windows? (not (or linux? mac?))      "Are we on windows machine?")
@@ -29,18 +28,8 @@
 (defvar server? t
   "Alias `dotspacemacs-enable-server'.")
 
-(defvar redo-bindings? (if eric? t nil)
-  "Redo spacemacs bindings? Defaults to nil for non-eric users.
-
-I aggressively re-bind and un-bind spacemacs defaults.
-
-This indicator:
-1. Removes prefixes/bindings contained within `redo-spacemacs-prefixes-list'.
-2. Removes bindings in `redo-spacemacs-undo-bindings-alist'.
-3. Adds bindings in `redo-spacemacs-new-bindings-alist'.
-
-It is highly recommend to look through the above 3 variables before enabling,
-defined at end of `layers/config/packages.el' in `config/init-redo-spacemacs'.")
+(defvar redo-bindings? nil
+  "Redo spacemacs bindings")
 
 ;;; Spacemacs/
 ;;;; Spacemacs/init
@@ -125,8 +114,6 @@ Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
 
 (defun dotspacemacs/user-config/post-layer-load-config ()
   "Configuration to take place *after all* layers/pkgs are instantiated."
-  (when (configuration-layer/package-used-p 'redo-spacemacs)
-    (redo-spacemacs-bindings))
 
   ;; While toggling with `toggle-frame-fullscreen' works, I could not get
   ;; it to work as a hook attached to the frame-make or window-setup.
