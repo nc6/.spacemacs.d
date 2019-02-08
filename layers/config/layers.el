@@ -11,7 +11,8 @@
    (ivy :variables
         ivy-extra-directories nil)
    (org :variables
-        org-want-todo-bindings t)
+        org-want-todo-bindings t
+        org-projectile-file "~/org/projectile.org")
    (shell :variables
           shell-default-shell 'eshell)
    syntax-checking
