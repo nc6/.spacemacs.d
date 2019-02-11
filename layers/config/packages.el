@@ -135,7 +135,13 @@
   (spacemacs/set-leader-keys "aof" 'org-open-at-point-global)
   (spacemacs/set-leader-keys-for-major-mode 'org-mode
     "r" 'org-refile
-    "s p" 'org-sort-entries-priorities))
+    "s p" 'org-sort-entries-priorities)
+
+  (setq org-capture-templates
+        (quote (("t" "todo" entry (file+headline org-default-notes-file "Tasks")
+                 "* TODO %?\n%U\n%a\n" :clock-in t :clock-resume t)
+                ("n" "note" entry (file org-default-notes-file)
+                 "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)))))
 
 ;;;; Ranger
 
