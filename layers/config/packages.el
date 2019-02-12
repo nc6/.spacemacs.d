@@ -141,7 +141,9 @@
         (quote (("t" "todo" entry (file+headline org-default-notes-file "Tasks")
                  "* TODO %?\n%U\n%a\n" :clock-in t :clock-resume t)
                 ("n" "note" entry (file org-default-notes-file)
-                 "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)))))
+                 "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t))))
+
+  (setq org-agenda-files '("~/org")))
 
 ;;;; Ranger
 
