@@ -93,7 +93,7 @@
 ;;;; Which-key
 
 (defun display/post-init-which-key ()
-  (when (configuration-layer/package-used-p 'pretty-fonts)
+  (when (configuration-layer/package-usedp 'pretty-fonts)
     (setq which-key-separator " ")
     (setq which-key-prefix-prefix " ")))
 

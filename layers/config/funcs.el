@@ -40,7 +40,7 @@
 ;;; Owned Packages
 ;;;; Outshine
 
-(when (configuration-layer/package-used-p 'outshine)
+(when (configuration-layer/package-usedp 'outshine)
   (defun outshine-fix-narrow-pos (&rest args)
     "Narrowing works within the headline rather than requiring to be on it."
     (unless (outline-on-heading-p t)

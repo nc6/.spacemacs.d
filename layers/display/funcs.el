@@ -2,7 +2,7 @@
 ;;; Owned Packages
 ;;;; All-the-icons-ivy
 
-(when (configuration-layer/package-used-p 'all-the-icons-ivy)
+(when (configuration-layer/package-usedp 'all-the-icons-ivy)
   (defun all-the-icons-ivy-file-transformer-stdized (s)
     "Fix `all-the-icons-ivy-file-transformer' vertical alignment issues."
     ;; I like slightly < 1 to make icons not so dominating. Alignment issues are
