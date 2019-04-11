@@ -128,5 +128,5 @@ Check `dotspacemacs/get-variable-string-list' for all vars you can configure."
   (dotspacemacs/user-config/post-layer-load-config)
 
   ;; Drop-in whatever config here without having to worry about good practices
-  (ad-deactivate 'doc-view-toggle-display)
+  ;; (ad-deactivate 'doc-view-toggle-display)
   )
